@@ -15,6 +15,6 @@ WORKDIR /src/gitbook
 
 COPY . /src/gitbook
 
-EXPOSE 4000
+EXPOSE 4000 35729
 
 CMD /usr/local/bin/gitbook serve
