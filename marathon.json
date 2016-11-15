@@ -1,0 +1,33 @@
+{
+  "id": "/web/test2",
+  "cmd": null,
+  "cpus": 0.2,
+  "mem": 1024,
+  "disk": 0,
+  "instances": 1,
+  "executor": null,
+  "fetch": null,
+  "constraints": null,
+  "acceptedResourceRoles": null,
+  "user": null,
+  "container": {
+    "docker": {
+      "image": "i1215283/demo:latest",
+      "forcePullImage": false,
+      "privileged": false,
+      "portMappings": [
+        {
+          "containerPort": 4000,
+          "protocol": "tcp"
+        }
+      ],
+      "network": "BRIDGE"
+    }
+  },
+  "labels": {
+    "HAPROXY_GROUP": "external",
+    "HAPROXY_0_VHOST": "demo.xpg.cards"
+  },
+  "healthChecks": null,
+  "env": null
+}
