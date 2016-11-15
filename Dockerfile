@@ -1,6 +1,6 @@
+FROM gitbook/alpine-glibc
 
-
-FROM chusiang/gitbook
+EXPOSE 4000
 
 WORKDIR /usr/src/app
 
