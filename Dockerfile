@@ -1,7 +1,5 @@
 FROM node:6-slim
 
-MAINTAINER mr.sunboss@gmail.com
-
 ARG VERSION=3.2.2
 
 RUN npm install --global gitbook-cli &&\
@@ -11,7 +9,7 @@ RUN npm install --global gitbook-cli &&\
 
 WORKDIR /src/gitbook
 
-#VOLUME /src/gitbook /src/html
+#VOLUME /src/gitbook
 
 COPY . /src/gitbook
 
